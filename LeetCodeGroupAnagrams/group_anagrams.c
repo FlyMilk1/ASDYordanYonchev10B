@@ -1,3 +1,8 @@
+// n - strsSize
+// L - average length of string
+// O(n^2 * L)
+// Θ(n^2 * L)
+// Ω(n * L)
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -1,3 +1,6 @@
+// O(n^2 + m^2)
+// Θ(n^2 + m^2)
+// Ω(n + m)
 #include <stdio.h>
 void bubbleSort(int* arr, int n) {
     int i, j;

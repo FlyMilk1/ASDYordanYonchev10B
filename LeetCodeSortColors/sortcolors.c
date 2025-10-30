@@ -1,3 +1,6 @@
+// O(n)
+// Θ(n)
+// Ω(n)
 #include <stdio.h>
 enum Color { RED = 0, WHITE = 1, BLUE = 2 };
 void sortColors(int* arr, int n) {

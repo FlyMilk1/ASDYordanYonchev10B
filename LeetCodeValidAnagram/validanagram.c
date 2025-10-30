@@ -1,3 +1,6 @@
+// O(n)
+// Θ(n)
+// Ω(n)
 #include <stdio.h>
 
 int areAnagrams(const char* str1, const char* str2, int length1, int length2) {
