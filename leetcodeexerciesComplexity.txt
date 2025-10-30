@@ -1,0 +1,31 @@
+Largest sum algorithm:
+O(n^2)
+Θ(n^2)
+Ω(n)
+
+Assign Cookies algorithm:
+O(n^2 + m^2)
+Θ(n^2 + m^2)
+Ω(n + m)
+
+Sort Colors algorithm:
+O(n)
+Θ(n)
+Ω(n)
+
+Array partition algorithm:
+O(n^2)
+Θ(n^2)
+Ω(n)
+
+Valid anagram algorithm:
+O(n)
+Θ(n)
+Ω(n)
+
+Group anagrams algorithm:
+n - strsSize
+L - average length of string
+O(n^2 * L)
+Θ(n^2 * L)
+Ω(n * L)
