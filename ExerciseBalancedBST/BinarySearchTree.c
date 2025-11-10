@@ -43,9 +43,9 @@ TreeNode* buildBalancedBST(TreeType* arr, int size){
     node->right = buildBalancedBST(arr + mid + 1, size - mid - 1);
     return node;
 }
-TreeNode* balanceBST(BST* bstpointer){
+TreeNode* balanceBST(TreeNode* bstpointer){
     LinkedListNode* list = NULL;
-    storeInOrder(bstpointer->root, &list);
+    storeInOrder(bstpointer, &list);
     bubbleSort(&list);
     int size = getSize(list);
     TreeType* arr = (TreeType*)malloc(size * sizeof(TreeType));
@@ -53,10 +53,10 @@ TreeNode* balanceBST(BST* bstpointer){
         arr[i] = getValueAt(list, i);
     }
     clear(&list);
-    free(bstpointer->root);
-    bstpointer->root = buildBalancedBST(arr, size);
+    free(bstpointer);
+    bstpointer = buildBalancedBST(arr, size);
     free(arr);
-    return bstpointer->root;
+    return bstpointer;
 }
 int checkBalanced(TreeNode* treeNode){
     if(treeNode == NULL) return 1;

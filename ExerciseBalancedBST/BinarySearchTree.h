@@ -4,8 +4,8 @@
 typedef int TreeType;
 typedef struct TreeNode {
     TreeType data;
-    TreeNode* left;
-    TreeNode* right;
+    struct TreeNode* left;
+    struct TreeNode* right;
 }TreeNode;
 typedef struct BST{
     TreeNode* root;
@@ -14,6 +14,6 @@ void insertBST(TreeNode* treeNode, TreeType value);
 int searchBST(TreeNode* treeNode, TreeType value);
 void storeInOrder(TreeNode* treeNode, LinkedListNode** list);
 TreeNode* buildBalancedBST(TreeType* arr, int size);
-TreeNode* balanceBST(BST* bstpointer);
+TreeNode* balanceBST(TreeNode* bstpointer);
 int checkBalanced(TreeNode* treeNode);
 #endif
