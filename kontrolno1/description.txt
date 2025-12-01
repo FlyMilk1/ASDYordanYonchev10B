@@ -1,0 +1,16 @@
+Skip list:
+When creating define a random number of levels to the SL(skip list),
+Allocate for every header a pointer to the head of a Linked list.
+Check for allocation errors.
+createSkipNode:
+Create a new SL node that is in every level until a random (max SL level count).
+This works by creating the base level (0) node and creting a new one for each node level.
+Assigns forward pointers to every next level node.
+insert_key:
+Inserts a new node to the SL by creating first with createSkipnode.
+Search_key:
+Check for the key in every level starting from the top.
+Print_key:
+print every key at level 0.
+delete_key:
+Not implemented
